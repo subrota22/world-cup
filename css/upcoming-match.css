@@ -1,0 +1,358 @@
+/* google font family  */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+SA+Beginner&family=Finlandica:ital,wght@1,600&family=Gentium+Book+Plus:ital,wght@0,700;1,700&family=Open+Sans:ital,wght@0,300;1,400&family=Poppins:wght@300;500&family=Raleway:wght@200&family=Roboto&family=Roboto+Slab:wght@300&display=swap');
+/* body start from here */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background-color: aliceblue;
+}
+/* body end from here  */
+
+/* header style start from here  */
+.headerMianDiv{
+    background-color: darkcyan;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    margin-top: 35px;
+}
+.headerLeftDiv{
+    padding-left: 20px;
+}
+.headerRightDiv{
+    padding-bottom:0px;
+}
+.headTitle{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+}
+.headSubTitle{
+    font-size: 15px;
+    color: white;
+    padding: 5px;
+}
+.headButton{
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    height: 52px;
+    width: 260px;
+}
+.next{margin-left: 10px;} 
+.next{
+    margin-left: 20px;
+    animation: next linear forwards infinite alternate 0.8s;
+}  
+@keyframes next {
+    0%{
+        transform: translateX(10px);
+        color: rgba(107, 11, 126, 0.651);
+    }
+    100%{
+        transform: translateX(-10px); 
+        
+    }
+}
+/* live text style  */
+.liveText{
+    animation: live linear forwards infinite alternate 0.8s;
+}  
+@keyframes live {
+    0%{
+        color: rgba(107, 11, 126, 0.651);
+    }
+    100%{
+        text-shadow: 1px;
+        color: white;
+     }
+}
+.bannerImage{
+    height: 505px;
+    width: 350px;
+    margin-left: 30px;
+}
+/* header style end from here  */
+
+/* palyers container style start from here  */
+/* left info style start */
+.playerContainer{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    margin:20px;
+    margin-top: 40px;
+}
+.leftInfoDiv{
+   background-color: darkcyan;
+    border-radius: 10px;
+    height: 250px;
+    width: 260px;
+    padding: 10px;
+}
+.InfoButton{
+    border: none;
+    border-radius: 12px;
+    width: 220px;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-left: 17px;
+}
+.upcomButton{
+    border: none;
+    border-radius: 15px;
+    height: auto;
+    width: 220px;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 15px; 
+    background-color: darkblue;
+    color: white;
+}
+/* left info style end */
+
+/* players style start  */
+.upComingMatch{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 15px;
+    column-gap:15px;
+    margin-left: 10px;
+}
+.playingTeam{
+    height: auto;
+    width: auto;
+    border: 1px solid gray;
+    box-shadow: 0 2px 2px black;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-right: 10px;
+    background-color:lightseagreen;
+}
+.cartFlag{
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+}
+.cartTitle{
+    font-size: 21x;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+.cartSubtitle{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+.flag{
+height: 50px;
+width: 100px;
+}
+.vs{margin-left: 20px;
+     margin-right: 20px; margin-top: -1px;
+      color: orangered; font-weight: 900;
+}
+/* players style end  */
+
+/* palyers container style end from here  */
+
+/* footer style start from here  */
+.footerDiv{
+    width: 99.6%;
+    height: auto;
+    background-color: black;
+    padding-bottom: 10px;
+}
+.footerText{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+.footerHorizontalLine{
+    width: 100%;
+    border: 1px solid gray;
+}
+.footerLink > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size:16px;
+}
+.footerLink > ul > li {
+    list-style-type: none;
+    list-style-position: inside;
+    margin-left: 35px;
+}
+.footerLink > ul {
+    display: flex;
+    justify-content: center;
+}
+.footerIcon{
+    font-size: 40px;
+    border-radius: 50%;
+    margin-top: 25px;
+    color: rgb(9, 110, 168);
+}
+
+/* footer style end from here  */
+
+/*------------------------
+ animation start from here 
+ --------------------------*/
+button:hover{
+    cursor: pointer;
+    background-color: rgb(49, 6, 99);
+    box-shadow: 0 5px 8px lime;
+    color: white;
+    transition:  background-color 0.8s ,      box-shadow 0.8s ;
+}
+
+.headerMianDiv:hover {
+    box-shadow:  0 8px 50px black;
+    transform: scale(1.1);
+    transition: background-color 0.9s , box-shadow 0.9s ,    transform 1s  ;
+}
+
+
+.leftInfoDiv:hover{
+    background-color: white;
+    box-shadow:  0 8px 50px black;
+    color: lime;
+    transition:     background-color 0.9s , box-shadow 0.9s  ;
+}
+.playingTeam:hover{
+    transform: scale(0.9);
+    box-shadow: 0 10px 28px lightseagreen;
+    transition: transform 1s;
+}
+.footerIcon:hover{
+    transform: scale(1.2);
+    transition: transform 0.4s;
+}
+.footerLink > ul > li > a:focus{
+    color: lime;
+}
+/*------------------------
+ animation end from here 
+ --------------------------*/
+
+ 
+ /*-----------------
+ rwd start from here  
+ -------------------*/
+
+ /* laptop devices view */
+@media(max-width:1200px){
+    .upComingMatch{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .leftInfoDiv{
+        margin: 20px;
+    }
+    .view{display: block;}
+    .playerContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .leftInfoDiv{
+       display: flex;
+       width: 80%;
+       background-color: aliceblue;
+       margin: auto;
+       margin-bottom: 30px;
+    }
+    .leftInfoDiv:hover{display: flex; align-items: center ; justify-content: center;}
+    .InfoButton {border: 1px solid gray; 
+     margin-left: 20px;}
+     .players{
+        margin: auto;
+     }
+}
+
+/*tablet devices view */
+
+@media(max-width:800px){
+
+    .upComingMatch{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .playerContainer{
+      display: flex;
+      flex-direction: column;
+    }
+    .headerMianDiv{
+        padding: 28px;
+    }
+    .bannerImage{
+         height: 620px; width: 240px;
+         margin-top: 30%;
+    }
+    .view{display: block;}
+    .players{
+        margin: auto;
+     }
+}
+
+/* mobile devices view */
+@media(max-width:500px){
+
+    .upComingMatch{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        margin: auto;
+    }
+    .playerContainer{
+      display: flex;
+      flex-direction: column;
+    }
+    .leftInfoDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .headerMianDiv{
+      display: flex;
+      flex-direction: column;
+      margin-left:20px ;
+    }
+    .bannerImage{
+         height: 620px; width: 240px;
+         margin-top: 30%;
+    }
+    .footerDiv{
+        width: 99.5%;
+    }
+    .footerText{
+     display: flex;
+     justify-content: center;
+    }
+  .footerLink >  ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .view{display: none;}
+}
+
+  /*-----------------
+ rwd end from here  
+ -------------------*/
