@@ -12,7 +12,7 @@ body{
 /* header style start from here  */
 .headerMianDiv{
     background-color:royalblue;
-    height: auto;
+    height: 506px;
     width: 80%;
     margin: auto;
     padding-top: 10px;
@@ -210,7 +210,7 @@ height: 20vh;
 .footerText{
     text-align: center;
     font-size: 40px;
-    color: white;
+    color: rgba(220, 20, 60, 0.8);
     font-family: 'Dancing Script', cursive;
 }
 .footerHorizontalLine{
@@ -219,7 +219,7 @@ height: 20vh;
 }
 .footerLink > ul > li > a{
     text-decoration: none;
-    color: white;
+    color: cyan;
     font-size:16px;
 }
 .footerLink > ul > li {
@@ -315,7 +315,7 @@ button:hover{
 
 /*tablet devices view */
 
-@media(max-width:800px){
+@media(max-width:866px){
 
     .allPlayerDiv{
         display: grid;
@@ -327,6 +327,7 @@ button:hover{
     }
     .headerMianDiv{
         padding: 28px;
+        height: auto;
     }
     .bannerImage{
          height: 620px; width: 240px;
@@ -354,11 +355,18 @@ button:hover{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-left: 20%;
     }
     .headerMianDiv{
       display: flex;
       flex-direction: column;
       margin-left:20px ;
+      height: auto;
+    }
+    .leftInfoDiv:hover{
+        background-color: lime;
+        width: fit-content;
+        padding: 10px;
     }
     .bannerImage{
          height: 620px; width: 240px;
@@ -378,6 +386,7 @@ button:hover{
         align-items: center;
     }
     .view{display: none;}
+   
 }
 
   /*-----------------

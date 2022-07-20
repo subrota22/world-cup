@@ -12,7 +12,7 @@ body{
 /* header style start from here  */
 .headerMianDiv{
     background-color: darkcyan;
-    height: auto;
+    height: 506px;
     width: 80%;
     margin: auto;
     padding-top: 10px;
@@ -183,7 +183,7 @@ width: 100px;
 .footerText{
     text-align: center;
     font-size: 40px;
-    color: white;
+    color: rgba(220, 20, 60, 0.8);
     font-family: 'Dancing Script', cursive;
 }
 .footerHorizontalLine{
@@ -192,7 +192,7 @@ width: 100px;
 }
 .footerLink > ul > li > a{
     text-decoration: none;
-    color: white;
+    color: cyan;
     font-size:16px;
 }
 .footerLink > ul > li {
@@ -289,7 +289,7 @@ button:hover{
 
 /*tablet devices view */
 
-@media(max-width:800px){
+@media(max-width:850px){
 
     .upComingMatch{
         display: grid;
@@ -301,6 +301,7 @@ button:hover{
     }
     .headerMianDiv{
         padding: 28px;
+        height: auto;
     }
     .bannerImage{
          height: 620px; width: 240px;
@@ -328,11 +329,17 @@ button:hover{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-left: 20%;
+    }
+    .leftInfoDiv:hover{
+        background-image: linear-gradient(to left , blue , cyan , yellow);
+        width: fit-content;
     }
     .headerMianDiv{
       display: flex;
       flex-direction: column;
       margin-left:20px ;
+      height: auto;
     }
     .bannerImage{
          height: 620px; width: 240px;
