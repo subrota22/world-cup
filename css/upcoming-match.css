@@ -106,7 +106,8 @@ body{
     text-align: center;
     color: black;
     font-size: 15px;
-    background-color: aliceblue;
+    background-color: rgb(122, 4, 138);
+    color: whitesmoke;
     margin-top: 20px;
     margin-left: 17px;
 }
@@ -176,7 +177,7 @@ width: 100px;
 .footerDiv{
     width: 99.6%;
     height: auto;
-    background-color: black;
+    background-color: rgb(60, 10, 153);
     padding-bottom: 10px;
 }
 .footerText{
